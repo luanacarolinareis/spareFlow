@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "spareflow-reset",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

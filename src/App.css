@@ -1,0 +1,434 @@
+/* Remove scrollbars e ajusta o fundo corretamente */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Remove as barras de rolagem */
+  height: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  color: rgba(16, 37, 90, 0.65);
+}
+
+/* Define a imagem como fundo da página inteira */
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Substitua pelo código de cor desejado */
+
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/medical.jpg');
+  background-size: cover; /* Garante que a imagem de fundo cubra toda a área */
+  background-position: center; /* Posiciona a imagem no centro da tela */
+
+}
+
+/* Caixa de login semi-transparente */
+.login-box {
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com 80% de opacidade */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-logo {
+  width: 180px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input {
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #50889FFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9dc1d1;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.toggle {
+  color: #50889f;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  color: #50889f;
+}
+
+.tech-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.tech-title {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.tech-text {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.tech-search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.tech-dropdown, .tech-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.tech-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+  background-color: #646cff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tech-button:hover {
+  background-color: #535bf2;
+}
+
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #072d4a;
+  padding: 10px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.top-logo {
+  width: 65px;
+  height: 65px;
+  margin-right: 30px;
+}
+
+.app-name {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: white;
+}
+
+
+.user-name {
+  margin-left: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 60%;
+  text-align: right;
+  font-size: 16px;
+}
+
+
+.technician-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+  width: 100vw;
+  padding-top: 60px;
+}
+
+/* Barra de pesquisa */
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  margin-top: 20px;
+}
+
+
+.suggestions-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  z-index: 1;
+}
+
+.suggestions-list li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.tech-user-container {
+  display: flex;
+  align-items: center;
+  right: 0;
+}
+
+.tech-title {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.tech-text {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.tech-user-container img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.bench-id-input {
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+  width: 150px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.bench-id-status {
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.dropdown {
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 50px; /* Define um tamanho fixo */
+  text-align: center; /* Alinha o texto ao centro */
+  min-width: 55px;
+}
+
+.dropdown::after {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.dropdown:focus {
+  outline: none;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.user-menu {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  background-color: #142146;
+  border: 3px solid #12143b;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100px;
+  border-radius: 5px;
+}
+
+.user-menu button {
+  width: 100%;
+  padding: 8px;
+  background-color: #ff1000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.user-menu button:hover {
+  background-color: #ff0000;
+}
+
+/* Ajuste para todos os campos do formulário */
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px; /* Define um espaçamento uniforme */
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Ajuste para os inputs e selects */
+input, select {
+  width: 100%;
+  max-width: 400px; /* Define um limite para não ficar muito grande em ecrãs grandes */
+  padding: 12px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Ajuste do select para alinhar */
+select {
+  background-color: rgba(200, 230, 255, 0.7);
+  border: 2px solid #4a90e2;
+  cursor: pointer;
+  appearance: none;
+  text-align: center;
+}
+
+select:invalid {
+  color: #888; /* Cor mais clara para simular um placeholder */
+}
+
+/* Deixar a primeira opção (disabled) com cor diferente */
+select option:disabled {
+  color: #514f4f; /* Ou qualquer outra cor que desejar */
+  font-weight: bold;
+}
+
+.app-name {
+  color: #082f4c !important; /* Garante que a cor preta seja aplicada */
+  font-style: italic;
+}
+
+.bench-id-input::placeholder {
+  color: white; /* Define o placeholder branco */
+  opacity: 1; /* Garante que não fique transparente */
+}
+
+/* Estiliza a barra de rolagem para navegadores baseados em WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem */
+  height: 10px; /* Altura da barra de rolagem para rolagem horizontal */
+}
+
+/* Cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Cor do "thumb" (a parte que você arrasta) */
+::-webkit-scrollbar-thumb {
+  background: #ccc; /* Pode ajustar para outra cor, se quiser */
+  border-radius: 5px;
+}
+
+/* Muda a cor do "thumb" ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}
+

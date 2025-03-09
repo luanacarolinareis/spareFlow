@@ -1,0 +1,54 @@
+#scroll-container {
+    width: 300px;             /* Set a width for the container */
+    height: 400px;            /* Set a height for the scrollable area */
+    overflow-y: auto;         /* Enable vertical scrolling */
+    border: 1px solid #ccc;  /* Optional border to show container edges */
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.list-item {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.list-item:hover {
+    background-color: #e0e0e0;  /* Change background color on hover */
+}
+
+.list-item:active {
+    background-color: #ccc;     /* Change background color when clicked */
+}
+
+/* Inside the list item */
+.list-item-header {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.list-item-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.list-item-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.list-item-button:hover {
+    background-color: #45a049;
+}
