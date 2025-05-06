@@ -122,5 +122,5 @@ spareflow5@gmail.com
 
 ---
 
-> SpareFLOW - Eficiência, rastreabilidade e confiança no controlo de peças adicionais
+> SpareFLOW - Eficiência, rastreabilidade e confiança no controlo de peças adicionais.
 > **Link N' Parse Team**
