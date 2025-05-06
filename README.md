@@ -103,8 +103,8 @@ Técnico pesquisa o pedido, desloca-se ao ponto de recolha e confirma a entrega 
 
 ## 📄 Documentação & Demonstração
 
-- [Relatório do Projeto (PDF)](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/65507449/2e3a2dbb-e05d-447e-8975-0ced40e32e29/Link-N-Parse-Relatorio.pdf)
-- [Pitch de Apresentação (PDF)](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/65507449/5828c8b6-9a64-4b43-a773-18b16f326b20/Link-N-Parse-Pitch.pdf)
+- [Relatório do Projeto (PDF)](https://github.com/luanacarolinareis/spareFlow/blob/master/Link%20N'%20Parse%20-%20Relat%C3%B3rio.pdf)
+- [Pitch de Apresentação (PDF)](https://github.com/luanacarolinareis/spareFlow/blob/master/Link%20N%E2%80%99%20Parse%20-%20Pitch.pdf)
 - [MVP Online](https://spareflow-reset.web.app/)
 
 ---
